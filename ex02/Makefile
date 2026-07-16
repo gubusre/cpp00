@@ -1,17 +1,17 @@
-NAME		= megaphone
+NAME	= dreamjob
 
-CC			= c++
-CFLAGS		= -Wall -Wextra -Werror -std=c++98
+CXX		= c++
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRCS		= Megaphone.cpp
-OBJS		= $(SRCS:.cpp=.o)
+SRCS	= Account.cpp tests.cpp
+OBJS	= $(SRCS:.cpp=.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
 	$(CXX) $(CXXFLAGS) -o $(NAME) $(OBJS)
 
-%.o: %.c
+%.o: %.cpp
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:
