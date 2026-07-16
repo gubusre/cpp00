@@ -1,6 +1,7 @@
 #include "PhoneBook.hpp"
 #include <iostream>
 #include <iomanip>
+#include <cctype>
 
 PhoneBook::PhoneBook(void)
 {
